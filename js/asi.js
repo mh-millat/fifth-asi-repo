@@ -12,16 +12,16 @@ document.addEventListener( 'DOMContentLoaded', function(){
 
 function setLclDate(){  
     const date = new Date();
-            const options = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
-            const formattedDate = date.toLocaleDateString('en-US', options);
+            const optn = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
+            const formattedDate = date.toLocaleDateString('en-US', optn);
             document.getElementById('local-date').innerText = formattedDate;
 }
 setLclDate() ;
     
 function getFormattedTime(){
-    const options ={hour: '2-digit', minute: '2-digit', second: '2-digit'};
+    const optn ={hour: '2-digit', minute: '2-digit', second: '2-digit'};
     const date = new Date();
-    return date.toLocaleTimeString('en-US', options);
+    return date.toLocaleTimeString('en-US', optn);
 }
     
 let totalTasks = '06';
