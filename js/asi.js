@@ -1,4 +1,6 @@
-const colors = ["red", "blue", "green", "yellow", "purple", "orange" ] ;
+const colors = [
+    "red", "violet", "gold", "silver", "maroon", "blue" , "green", "yellow", "purple", "orange", "pink", "brown", "gray", "black", "white", "cyan", "magenta", "lime", "teal", "indigo"
+] ;
 let i = 0;
 
 document.addEventListener( 'DOMContentLoaded', function(){
