@@ -34,7 +34,7 @@ for (const button of buttons){
     button.addEventListener('click', function () {
         const taskDiv = this.closest('.task-div');
         const taskName = this.innerText;
-        const alertResponse = confirm(`Are you sure you want to complete "${taskName}"?`);
+        const alertResponse = confirm(`Are you sure you want to complete`);
         if ( alertResponse === true && taskName === "Completed"){
             const taskDescription = taskDiv.querySelector('h1').innerText ;
             const activityLog = document.getElementById('activity-log');
