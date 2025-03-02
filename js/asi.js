@@ -41,7 +41,6 @@ for (const button of buttons){
             const newLog = document.createElement('div');
             newLog.classList.add('p-2', 'bg-gray-100', 'rounded-lg', 'mb-4');
             const currentTime = getFormattedTime();
-    
             newLog.innerHTML =`<p>You have completed the task <p>${taskDescription}</p>Task completed at: ${currentTime}</p>`;
             const hr = activityLog.querySelector('hr');
             if (hr){
@@ -50,7 +49,6 @@ for (const button of buttons){
                 else {
                     activityLog.appendChild(newLog);
                 }
-    
             this.disabled = true;
             this.classList.add("bg-gray-400", "rounded-lg" );
             taskDiv.classList.add('opacity-50');
@@ -59,10 +57,10 @@ for (const button of buttons){
             totalTasks--;
             document.getElementById('task-count').innerText = totalTasks;
             if ( completedTasks === 6) {
-                alert("Congratulation, You have completed 6 tasks!") ;
+                alert("Congratulation!!! You have completed 6 tasks!") ;
             }
             if (completedTasks === 29) {
-                alert("Congratulation, You Have completed all the tasks!" ) ;
+                alert("Congratulation!!! You Have completed all the tasks!" ) ;
             }
         }
     });
